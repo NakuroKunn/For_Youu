@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./for you2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong><p style="color:cyan"> Dear Viana. </p></strong>
+                        <p style="color:black"> <body text="black"> Haii.. Hehe, Aku baru belajar HTML nihh. 
+                        <br> Oh ya, Makasih ya udh mau menjadi pasangan ku..
+                        <br> Semoga aku tidak membuatmu risih/ilfeel.
+                        <br> Jujur aku sendiri takut karena aku sadar diri..
+                        <br> Sometimes.. aku berfikir bahwa kamu pantas mendapatkan yang lebih baik dari ku...
+                        <br> tapi kadang aku juga berfikir.. kenapa tidak aku sendiri yang menjadi lebih baik?
+                        <br> aku selalu berusaha untuk menjadi lebih baik...
+                        <strong><p style="color:rgb(0, 0, 0)">Ya.. Sekian dari saya.. maaf ya? jika ini jelek atau mungkin mengganggumu
+                            <br> aku juga baru belajar bikin beginian..
+                        </p></strong>
+                           </body>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
